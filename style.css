@@ -1,20 +1,46 @@
-nav,.nav-links{
-    display:flex;
-
-}
-nav{
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  p {
+    color: rgb(85, 85, 85);
+  }
+  
+  /* TRANSITION */
+  
+  a,
+  .btn {
+    transition: all 300ms ease;
+  }
+  
+  /* DESKTOP NAV */
+  
+  nav,
+  .nav-links {
+    display: flex;
+  }
+  
+  nav {
     justify-content: space-around;
     align-items: center;
-    height:20vh;
-
-}
-.nav-links {
-    gap:2rem;
-    list-style:none;
-    font-size:1.5rem;
-
-
-}
+    height: 17vh;
+  }
+  
+  .nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
 a{
     color:black;
     text-decoration: none;
@@ -44,12 +70,15 @@ section {
 .section-container{
     display:flex;
 }
+/*profile*/
 #profile{
     display:flex;
     justify-content: center;
     gap:5rem;
     height: 40vh;
-
+    background-color: black;
+    width:100%;
+    margin:0;
 }
 .section-pic{
     display:flex;
@@ -69,18 +98,18 @@ section {
 }
 .section-text-p1{
     text-align: center;
-    color: grey;
+    color: rgb(216, 214, 214);
     margin-bottom:5px;
 }
 .section-text-p2{
     font-size:1.5rem;
-    color:grey;
+    color:rgb(216, 214, 214);
     margin-top:0;
 
 }
 .title{
     margin-top: 5px;
-
+    color:white;
     font-size: 50px;
     margin-bottom: 5px;
 
@@ -102,15 +131,17 @@ section {
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
+    margin-top:10px;
     border-radius: 2rem;;
 }
 .btn-color-1{
-    border:black 0.1rem solid;
+    border:white .1rem solid;
 }
 .btn-color-1:hover{
     cursor:pointer;
     color: white;
     background: rgb(53,53,53);
+    transform: scale(1.02);
 }
 .btn-container{
     gap:1rem;
@@ -123,12 +154,11 @@ section {
 .experience-sub-title{
     color: rgb(53, 53, 53);
     font-weight: 600;
-    font-size: 1.75rme;
-    margin:0;
+    font-size: 1.75rem;
     align-self:center;
     text-align: center;
-    margin-bottom: 5px;
-
+    margin-top:-20px;
+    line-height:30px;
 }
 .experience-details-container{
     display: flex;
@@ -136,14 +166,15 @@ section {
     flex-direction: column;
 }
 .details-container {
+    display:grid;
+    place-items:start center;
     width: 80%;
     margin: 0 auto;
-    border: 2px solid #ccc; /* Border style */
-    padding: 5px; /* Padding inside the border */
-    padding-top:-5px;
-    border-radius: 10px; /* Optional: Rounded corners */
-    margin-bottom:3rem;
-
+    border: 2px solid rgb(65, 65, 65); /* Border style */
+    padding: 8rem; /* Padding inside the border */
+    border-radius: 15px; /* Optional: Rounded corners */
+    margin-bottom: 7rem;
+    
 }
 .article-container{
     display:flex;
@@ -152,12 +183,15 @@ section {
     flex-direction: row;
     gap:2.5rem;
     justify-content: space-around;
+    margin-top:2rem;
 }
 article{
     display:flex;
     width:10rem;
     justify-content:space-around;
     gap:0.5rem;
+    margin-top:2rem;
+    margin-right:2rem;
 }
 article div{
     display:flex;
@@ -166,7 +200,7 @@ article div{
 
 article .icon{
     cursor: default;
-    height:2%;
+    
 }
 article >div>p.level{
     margin:0;
@@ -179,11 +213,98 @@ article >div>h3{
     color:rgb(65, 65, 65);
 }
 
+.exp_icon{
+    cursor:pointer;
+    height:3rem;
+    margin-top:10px;
+}
+.center-content{
+    text-align:center;
+}
 
+.section-title,.section__text__p1{
+    text-align: center;
+}
+.section-title{
+    margin-top:0;
+    margin-bottom:10px;
+    font-size:xx-large;
+}
+.section__text__p1{
+    color:rgb(65, 65, 65);
+    margin-bottom: 5px;
+    font-size: large;
+}
+/* projects section*/
+#Projects{
+    background-color: black;
+    width:100%;
+    margin:0;
+}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 0 20px; /* Ensure some padding to maintain equal gap on left and right */
+}
 
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.project img {
+    width: 100%; /* Ensure the image fills the project container */
+    border-radius: 10px;
+    display: block;
+}
 
+.layer {
+    width: 100%; /* Ensure the layer matches the image width */
+    height: 100%; /* Ensure the layer covers the entire image height */
+    background: linear-gradient(rgba(133, 132, 132, 0.6), rgb(255, 255, 255));
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content within the layer */
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px; /* Add some padding to avoid text touching edges */
+}
+.layer h3{
+    font-weight:500;
+    margin-bottom:20px;
+    font-size:xx-large;
+    color:rgb(0, 0, 0);
 
-
+}
+.layer p{
+    color:black;
+}
+.layer a{
+    margin-top:20px;
+    color:black;
+    text-decoration:none;
+    font-size:xx-large;
+    line-height: 60px;
+    background:none;
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    text-align:center;
+}
+.layer a:hover{
+    cursor:pointer
+}
 
 

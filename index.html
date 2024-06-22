@@ -6,9 +6,10 @@
     <title>My Portfolio</title>
     <link rel = "stylesheet" href="style.css"/>
     <link rel = "stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav id="desktop-nav">
+    <nav class="left-navbar">
         <div class="logo">Gokul Raj</div>
         <div>
             <ul class="nav-links">
@@ -20,7 +21,7 @@
     </nav>
     <section id="profile">
         <div class="section-pic">
-            <img src="profilepic.png" alt =" my profile picture">
+            <img src="assets/profilepic.png" alt =" my profile picture">
         </div>
         <div class="section-text">
             <p class="section-text-p1">Hello I'm</p>
@@ -30,48 +31,49 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
         <div id ="socials-container">
-            <img src="linkedin.png" alt= "linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/gokul-raj-08a907314/'"/>
-            <img src="github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/yorpl0'"/>
+            <img src="assets/linkedin.png" alt= "linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/gokul-raj-08a907314/'"/>
+            <img src="assets/github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/yorpl0'"/>
         </div>
     </section>
     <section id="Experience">
-        <title class="title">My Experience</title>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="section-title">Skills</h1>
         <div class="experience-details-container">
             <div class="details-container">
-                <h2 class="experience-sub-title">Programming Languages</h2>
+                <h3 class="experience-sub-title">Programming Languages</h3>
                 <div class="article-container">
                     <article>
-                        <img src="python.png" alt ="python" class="icon"/>
-                        <div>
+                        <img src="assets/python.png" alt ="python" class="icon"/>
+                        <div class="center-content">
                             <h3>Python</h3>
                             <p class="level">Experienced</p>
                         </div>
                     </article>
                     <article>
-                        <img src="c-logo.png" alt ="c-logo" class="icon"/>
-                        <div>
+                        <img src="assets/c-logo.png" alt ="c-logo" class="exp_icon"/>
+                        <div class="center-content">
                             <h3>C++</h3>
                             <p class="level">Intermediate</p>
                         </div>
                     </article>
                     <article>
-                        <img src="html.png" alt="html" class="icon"/>
+                        <img src="assets/html.png" alt="html" class="exp_icon"/>
                         <div>
                             <h3>HTML</h3>
                             <p class="level">Intermediate</p>
                         </div>
                     </article>
                     <article>
-                        <img src="css.png" alt ="css" class="icon"/>
-                        <div>
+                        <img src="assets/css.png" alt ="css" class="exp_icon"/>
+                        <div class="center-content">
                             <h3>CSS</h3>
                             <p class="level">Intermediate</p>
 
                         </div>
                     </article>
                     <article>
-                        <img src="js.png" alt ="js" class="icon"/>
-                        <div>
+                        <img src="assets/js.png" alt ="js" class="exp_icon"/>
+                        <div class="center-content">
                             <h3>Javascript</h3>
                             <p class="level">Basic</p>
                         </div>
@@ -79,41 +81,41 @@
                 </div>
             </div>
         <div class="details-container">
-            <h2 class="experience-sub-title">Frameworks</h2>
+            <h3 class="experience-sub-title">Frameworks</h3>
             <div class="article-container">
                 <article>
-                    <img src="TensorFlow.png" alt="TF" class="icon">
-                    <div>
+                    <img src="assets/TensorFlow.png" alt="TF" class="exp_icon">
+                    <div class="center-content">
                         <h3>TensorFlow</h3>
-                        <p>Intermediate</p>
+                        <p class="level">Intermediate</p>
                     </div>
                 </article>
                 <article>
-                    <img src="NumPy.png" alt="NumPy" class="icon">
-                    <div>
+                    <img src="assets/NumPy.png" alt="NumPy" class="exp_icon">
+                    <div class="center-content">
                         <h3>NumPy</h3>
-                        <p>Experienced</p>
+                        <p class="level">Experienced</p>
                     </div>
                 </article>
                 <article>
-                    <img src="Pandas.png" alt="Pandas" class="icon">
-                    <div>
+                    <img src="assets/Pandas.png" alt="Pandas" class="exp_icon">
+                    <div class="center-content">
                         <h3>Pandas</h3>
-                        <p>Experienced</p>
+                        <p class="level">Experienced</p>
                     </div>
                 </article>
                 <article>
-                    <img src="scikit-learn.png" alt="scikit-learn" class="icon">
-                    <div>
+                    <img src="assets/scikit-learn.png" alt="scikit-learn" class="exp_icon">
+                    <div class="center-content">
                         <h3>scikit-learn</h3>
-                        <p>Basic</p>
+                        <p class="level">Basic</p>
                     </div>
                 </article>
                 <article>
-                    <img src="Keras.png" alt="Keras" class="icon">
-                    <div>
+                    <img src="assets/Keras.png" alt="Keras" class="exp_icon">
+                    <div class="center-content">
                         <h3>Keras</h3>
-                        <p>Basic</p>
+                        <p class="level">Basic</p>
                     </div>
                 </article>
             </div>
@@ -121,6 +123,38 @@
     </div>
 
     </section>
+    
+    <section id="Projects">
+        <div class="proj-container">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="section-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img class="img-1" src="assets/background.png">
+                    <div class="layer">
+                        <h3>Project-1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/background-2.png">
+                    <div class="layer">
+                        <h3>Project-2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/background-3.png">
+                    <div class="layer">
+                        <h3>Project-3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
     <script src="script.JS"></script>
 
 </body>
