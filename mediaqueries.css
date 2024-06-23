@@ -1,0 +1,25 @@
+  
+    @media screen and (max-width: 600px) {
+    #hamburger-nav{
+        display:flex;
+    }
+    .section-pic{
+        height:300px;
+        margin-bottom:60px;
+        justify-content:center;
+    }
+    .title{
+        font-size:32px;
+    }
+    }
+    @media screen and (max-width:1920px){
+        #desktop-nav{
+            display:flex;
+        }
+    }
+    @media screen and (max-width:2560px){
+        #desktop-nav{
+            display:flex;
+        }
+    }
+  
