@@ -16,6 +16,27 @@
         #desktop-nav{
             display:flex;
         }
+        .section-pic{
+            margin-bottom:2rem;
+            height:300px;
+            width:300px;
+            line-height:2rem;
+            transform: translateY(-30px)
+        }
+        #profile{
+            align-items:center;
+        }
+        .details-container{
+            width:60%;
+        }
+        #Projects{
+            margin-top:40rem;
+            height: 60rem;
+        }
+        
+        .project-list{
+            grid-template-columns: repeat(auto-fit, minmax(187px, 1fr));
+        }
     }
     @media screen and (max-width:2560px){
         #desktop-nav{
